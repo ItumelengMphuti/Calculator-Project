@@ -3,24 +3,47 @@
 }
 .calculator {
     border-radius: 24px;
-    background: #4f4e50;
-    box-shadow:  10px 10px 20px #484749,
-             -10px -10px 20px #565557;
+    background: #e1dfe2;
+    box-shadow:  10px 10px 20px #bfbfc0,
+             -10px -10px 20px #bfbfc0;
     margin: 150px;
-    width: fit-content;
+    width: 250px;
+    height: 320px;
     padding: 20px;
 }
 .calculator__display {
-    background-color: #222222;
+    background-color: #999696;
     color: #fff;
-    font-size: 25px;
-    margin:7px;
+    border-radius: 7px;
+    font-size: 27px;
+    width: 200px;
+    margin:0 20px 20px 20px;
     padding: 15px 20px;
+    align-items: center;
     text-align: right;
   }
 .buttons {
-    background: #4f4e50;
+    background: #e1dfe2;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
 }
+.clear {
+    color: rgb(250, 4, 4);
+    background-color: #e1dfe2;
+    font-weight: bold;
+}
+button {
+    border-radius: 100px;
+    border: 0;
+    border-color: rgb(255, 238, 238);
+    color: white;
+    background-color: gray;
+    padding: 7px;
+    box-shadow:  5px 5px 10px #141416,
+             -5px -5px 10px #b9b9c5;
+}
+/* .equal-operator {
+    width: 150px;
+    justify-self: end; /* Align the button to the end of its grid cell */
+   
