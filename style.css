@@ -1,49 +1,71 @@
 * {
-    background-color: whitesmoke;
+  box-sizing: border-box;
 }
+
 .calculator {
-    border-radius: 24px;
-    background: #e1dfe2;
-    box-shadow:  10px 10px 20px #bfbfc0,
-             -10px -10px 20px #bfbfc0;
-    margin: 150px;
-    width: 250px;
-    height: 320px;
-    padding: 20px;
+  align-items: center;
+  border-radius: 24px;
+  background: #e1dfe2;
+  box-shadow:  10px 10px 20px #bfbfc0,
+           -10px -10px 20px #bfbfc0;
+  margin: 5% auto;
+  width: 50%;
+  max-width: 300px;
+  padding: 3%;
 }
-.calculator__display {
-    background-color: #999696;
-    color: #fff;
-    border-radius: 7px;
-    font-size: 27px;
-    width: 200px;
-    margin:0 20px 20px 20px;
-    padding: 15px 20px;
-    align-items: center;
-    text-align: right;
-  }
+
+.calculator_display {
+  background-color: #999696;
+  color: #fff;
+  border-radius: 7px;
+  font-size: 24px;
+  padding: 10px;
+  text-align: right;
+}
+
 .buttons {
-    background: #e1dfe2;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
+  background: #e1dfe2;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-gap: 10px;
+  border-radius: 20px; 
+  padding: 10px; 
+  
+}
+
+button {
+  font-size: large;
+  border-radius: 50%; 
+  border: 0;
+  color: white;
+  background-color: gray;
+  padding: 15px; 
+  box-shadow:  5px 5px 10px #141416,
+           -5px -5px 10px #b9b9c5;
 }
 .clear {
-    color: rgb(250, 4, 4);
-    background-color: #e1dfe2;
-    font-weight: bold;
+  color: red;
 }
-button {
-    border-radius: 100px;
-    border: 0;
-    border-color: rgb(255, 238, 238);
-    color: white;
-    background-color: gray;
-    padding: 7px;
-    box-shadow:  5px 5px 10px #141416,
-             -5px -5px 10px #b9b9c5;
+.equal-operator {
+  background-color: orange;
 }
-/* .equal-operator {
-    width: 150px;
-    justify-self: end; /* Align the button to the end of its grid cell */
-   
+
+.buttons > * {
+  padding: 15px;
+  position: relative;
+  text-align: center;
+}
+
+.buttons > *:active::before,
+.buttons > .is-depressed::before {
+  background-color: rgba(0, 0, 0, 0.2);
+  bottom: 0;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5) inset;
+  content: "";
+  left: 0;
+  opacity: 0.3;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
