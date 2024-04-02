@@ -5,7 +5,7 @@
 .calculator {
   align-items: center;
   border-radius: 24px;
-  background: #e1dfe2;
+  background: #AEC3B0;
   box-shadow:  10px 10px 20px #bfbfc0,
            -10px -10px 20px #bfbfc0;
   margin: 5% auto;
@@ -15,7 +15,7 @@
 }
 
 .calculator_display {
-  background-color: #999696;
+  background-color: #01161E;
   color: #fff;
   border-radius: 7px;
   font-size: 24px;
@@ -24,7 +24,7 @@
 }
 
 .buttons {
-  background: #e1dfe2;
+  background: #AEC3B0;
   display: grid;
   grid-template-columns: repeat(3, 1fr); 
   grid-gap: 10px;
@@ -37,17 +37,17 @@ button {
   font-size: large;
   border-radius: 50%; 
   border: 0;
-  color: white;
-  background-color: gray;
+  color: #01161E;
+  background-color: #EFF6E0;
   padding: 15px; 
   box-shadow:  5px 5px 10px #141416,
-           -5px -5px 10px #b9b9c5;
+           -5px -5px 10px #AEC3B0;
 }
 .clear {
   color: red;
 }
 .equal-operator {
-  background-color: orange;
+  background-color: #598392;
 }
 
 .buttons > * {
